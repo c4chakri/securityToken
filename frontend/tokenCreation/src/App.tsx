@@ -33,67 +33,67 @@ function App() {
               <Route path="/signup" element={<SignUp />} />
 
               <Route path="/tokens" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <Dashboard />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/token-creation" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <TokenCreation />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/token-actions/:tokenAddress" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <TokenActions />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/investors" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <Investors />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/primary-market" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <PrimaryMarket />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/secondary-market" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <SecondaryMarket />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/transactions" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <Transactions />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/documents" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <Documents />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
               <Route path="/token-management" element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Layout>
                     <TokenManagement />
                   </Layout>
-                </ProtectedRoute>
+                //</ProtectedRoute>
               } />
             </Routes>
           </div>
