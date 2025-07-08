@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+import {BACKEND_URL} from '../services/constants';
 interface TokenData {
     ownerAddress: string;
     irAgentAddress: string[];
@@ -50,8 +50,8 @@ export default async function addTokenToTrex(
             claimData
         };
 console.log('Payload:', payload);
-
-        const response = await axios.post('http://localhost:8000/api/token/createToken', payload, {
+        
+        const response = await axios.post(`${BACKEND_URL}/api/token/createToken`, payload, {
             headers: {
                 'Content-Type': 'application/json'
             }
